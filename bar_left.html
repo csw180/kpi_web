@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+</HEAD>
+<script>
+function left_move(){    
+	if (parent.document.getElementById('frame_body').cols == '190,15,*' ){
+		parent.document.getElementById('frame_body').cols = '0,15,*';
+	}else{
+		parent.document.getElementById('frame_body').cols = '190,15,*';
+	}
+}
+</script>
+<BODY topmargin="0" leftmargin="0">
+<form name='frm'>
+<div> 
+  <table width="15" height="100%" border="0" cellspacing="0" cellpadding="0">   
+    <tr> 
+      <td width="15" valign="top"><img src="img/but_click.gif" name="bar2"  width="15" height="50" style="cursor:pointer;" onclick="left_move()" onmouseover="this.src='img/but_click_over.gif'" onmouseout="this.src='img/but_click.gif'"> 
+      </td>
+    </tr>
+  </table>
+</div>
+</form>
+</BODY>
+</HTML>
+

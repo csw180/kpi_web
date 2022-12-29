@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+   <url-mapping url="MainPage.do" useFlowHandler="true" >
+<!--        <web-action-class>tpms.framework.component.signon.SignOnHTMLAction</web-action-class>-->
+        <flow-handler class="tpms.common.web.handlers.SignOnFlowHandler">
+             <handler-result result="0"  screen="Main.screen"/>
+        </flow-handler>
+    </url-mapping>
+
+   <url-mapping url="signoff.do" screen="SignOn.screen" >
+        <web-action-class>tpms.framework.component.signon.SignOffHTMLAction</web-action-class>
+   </url-mapping>
+
+<!-- 공지사항  -->
+  <url-mapping url="news.scr.news_scr_1111.do" screen="news.scr.news_scr_1111.screen">
+      <web-action-class>tpms.news.scr.news_scr_1111_Control</web-action-class>
+  </url-mapping>
+  <url-mapping url="news.scr.news_scr_1112.do" screen="news.scr.news_scr_1112.screen">
+      <web-action-class>tpms.news.scr.news_scr_1112_Control</web-action-class>
+  </url-mapping>
+  <url-mapping url="news.scr.news_scr_1113.do" screen="news.scr.news_scr_1113.screen">
+      <web-action-class>tpms.news.scr.news_scr_1113_Control</web-action-class>
+  </url-mapping>
+  <url-mapping url="news.scr.news_scr_1114.do" screen="news.scr.news_scr_1114.screen">
+      <web-action-class>tpms.news.scr.news_scr_1114_Control</web-action-class>
+  </url-mapping>
+  <url-mapping url="news.scr.news_scr_1121.do" screen="news.scr.news_scr_1121.screen">
+      <web-action-class>tpms.news.scr.news_scr_1121_Control</web-action-class>
+  </url-mapping>
+  <url-mapping url="news.scr.news_scr_1122.do" screen="news.scr.news_scr_1122.screen">
+      <web-action-class>tpms.news.scr.news_scr_1122_Control</web-action-class>
+  </url-mapping>
+  <url-mapping url="news.scr.news_scr_1124.do" screen="news.scr.news_scr_1124.screen">
+      <web-action-class>tpms.news.scr.news_scr_1124_Control</web-action-class>
+  </url-mapping>
+
+<!-- 시스템 관리 -->
+   <url-mapping url="comm.password.do" screen="comm.password.screen" >
+     <web-action-class>tpms.comm.password.password_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="managesystem.menu.do" screen="managesystem.menulist.screen" >
+        <web-action-class>tpms.managesystem.menu.Menu_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="managesystem.role.do" screen="managesystem.rolelist.screen" >
+        <web-action-class>tpms.managesystem.menu.Role_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="managesystem.user.do" screen="managesystem.userlist.screen" >
+        <web-action-class>tpms.managesystem.menu.User_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="managesystem.role_conn.do" screen="managesystem.role_conn_list.screen" >
+        <web-action-class>tpms.managesystem.menu.RoleConn_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="managesystem.log.do" screen="managesystem.loglist.screen" >
+        <web-action-class>tpms.managesystem.menu.LogControl</web-action-class>
+   </url-mapping>
+ <!-- 코드 관리 -->
+   <!--KPI코드관리 -->
+   <url-mapping url="macd.scr.macd_scr_1011.do" screen="kpi.macd.macd_1011.screen" >
+     <web-action-class>kpi.macd.scr.macd_scr_1011_Control</web-action-class>
+   </url-mapping>
+   <!--KPI상품그룹조회 -->
+   <url-mapping url="macd.scr.macd_scr_1021.do" screen="kpi.macd.macd_1021.screen" >
+     <web-action-class>kpi.macd.scr.macd_scr_1021_Control</web-action-class>
+   </url-mapping>
+   <!--영업점 PeerGroup관리 -->
+   <url-mapping url="macd.scr.macd_scr_1061.do" screen="kpi.macd.macd_1061.screen" >
+     <web-action-class>kpi.macd.scr.macd_scr_1061_Control</web-action-class>
+   </url-mapping>
+   <!--설문조사 항목 등록 미운용 -->
+   <url-mapping url="macd.scr.macd_scr_1071.do" screen="kpi.macd.macd_1071.screen" >
+     <web-action-class>kpi.macd.scr.macd_scr_1071_Control</web-action-class>
+   </url-mapping>
+   <!--설문조사 항목 관리 미운용 -->
+   <url-mapping url="macd.scr.macd_scr_1081.do" screen="kpi.macd.macd_1081.screen" >
+     <web-action-class>kpi.macd.scr.macd_scr_1081_Control</web-action-class>
+   </url-mapping>
+   <!--통합정보코드 관리 -->
+   <url-mapping url="macd.scr.macd_scr_1101.do" screen="kpi.macd.macd_1101.screen" >
+     <web-action-class>kpi.macd.scr.macd_scr_1101_Control</web-action-class>
+   </url-mapping>
+   <!--통합정보코드 업로드 -->
+   <url-mapping url="macd.scr.macd_scr_1111.do" screen="kpi.macd.macd_1111.screen" >
+     <web-action-class>kpi.macd.scr.macd_scr_1111_Control</web-action-class>
+   </url-mapping>
+ <!-- data 입력 -->
+   <!--설정비 면제계좌 등록 -->
+   <url-mapping url="main.scr.main_scr_1011.do" screen="kpi.main.main_1011.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1011_Control</web-action-class>
+   </url-mapping>
+   <!--설정비 면제계좌 승인 -->
+   <url-mapping url="main.scr.main_scr_1021.do" screen="kpi.main.main_1021.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1021_Control</web-action-class>
+   <!--타지점실적계좌 등록 -->
+   </url-mapping>
+   <url-mapping url="main.scr.main_scr_1031.do" screen="kpi.main.main_1031.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1031_Control</web-action-class>
+   </url-mapping>
+   <!--타지점실적계좌 승인 -->
+   <url-mapping url="main.scr.main_scr_1041.do" screen="kpi.main.main_1041.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1041_Control</web-action-class>
+   </url-mapping>
+   <!--기타조정손익 등록 -->
+   <url-mapping url="main.scr.main_scr_1051.do" screen="kpi.main.main_1051.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1051_Control</web-action-class>
+   </url-mapping>
+   <!--기타조정손익 조회 -->
+   <url-mapping url="main.scr.main_scr_1061.do" screen="kpi.main.main_1061.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1061_Control</web-action-class>
+   </url-mapping>
+   <!-- 소개마케팅계좌 관리 -->
+   <url-mapping url="main.scr.main_scr_1071.do" screen="kpi.main.main_1071.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1071_Control</web-action-class>
+   </url-mapping>
+   <!--사업부변경고객 등록 -->
+   <url-mapping url="main.scr.main_scr_1121.do" screen="kpi.main.main_1121.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1121_Control</web-action-class>
+   </url-mapping>
+   <!--기준실적 등록 -->
+   <url-mapping url="main.scr.main_scr_1131.do" screen="kpi.main.main_1131.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1131_Control</web-action-class>
+   </url-mapping>
+   <!--영업점실적조정 등록 -->
+   <url-mapping url="main.scr.main_scr_1141.do" screen="kpi.main.main_1141.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1141_Control</web-action-class>
+   </url-mapping>
+   <!--대손충당금 등록 -->
+   <url-mapping url="main.scr.main_scr_1151.do" screen="kpi.main.main_1151.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1151_Control</web-action-class>
+   </url-mapping>
+   <!--고객관리자코드 검증 -->
+   <url-mapping url="main.scr.main_scr_1161.do" screen="kpi.main.main_1161.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1161_Control</web-action-class>
+   </url-mapping>
+   <!-- 10대 조달처 : 이우석(2008.01) -->
+   <url-mapping url="main.scr.main_scr_1171.do" screen="kpi.main.main_1171.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1171_Control</web-action-class>
+   </url-mapping>
+     <!-- 후선배치직원실적 관리 : 조형석(2008.2) -->
+   <url-mapping url="main.scr.main_scr_1181.do" screen="kpi.main.main_1181.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1181_Control</web-action-class>
+   </url-mapping>
+     <!-- 디마케팅고객 관리 : 조형석(2008.2) -->
+   <url-mapping url="main.scr.main_scr_1191.do" screen="kpi.main.main_1191.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1191_Control</web-action-class>
+   </url-mapping>
+     <!-- 퇴직연금계좌조정 등록 : 조형석(2009.3) -->
+   <url-mapping url="main.scr.main_scr_1211.do" screen="kpi.main.main_1211.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1211_Control</web-action-class>
+   </url-mapping>
+     <!-- 자본비용 등록 : 하진영(2010.3) -->
+   <url-mapping url="main.scr.main_scr_1221.do" screen="kpi.main.main_1221.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1221_Control</web-action-class>
+   </url-mapping>
+     <!-- RMC인정개인고객 등록 : 하진영(2010.3) -->
+   <url-mapping url="main.scr.main_scr_1231.do" screen="kpi.main.main_1231.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1231_Control</web-action-class>
+   </url-mapping>
+     <!-- 구조조정여신계좌 등록 : 하진영(2010.4) -->
+   <url-mapping url="main.scr.main_scr_1241.do" screen="kpi.main.main_1241.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1241_Control</web-action-class>
+   </url-mapping>
+     <!-- 이수관계좌 등록 : 하진영(2010.4) -->
+   <url-mapping url="main.scr.main_scr_1251.do" screen="kpi.main.main_1251.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1251_Control</web-action-class>
+   </url-mapping>
+     <!-- 점별연체금액 조정: 하진영(2010.4) -->
+   <url-mapping url="main.scr.main_scr_1261.do" screen="kpi.main.main_1261.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1261_Control</web-action-class>
+   </url-mapping>
+     <!-- 외환전문역마케팅계좌 등록: 하진영(2010.5) -->
+   <url-mapping url="main.scr.main_scr_1271.do" screen="kpi.main.main_1271.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1271_Control</web-action-class>
+   </url-mapping>
+     <!-- 외환전문역마케팅계좌 승인: 하진영(2010.5) -->
+   <url-mapping url="main.scr.main_scr_1281.do" screen="kpi.main.main_1281.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1281_Control</web-action-class>
+   </url-mapping>
+     <!-- 실적조정계좌 등록: 하진영(2012.2) -->
+   <url-mapping url="main.scr.main_scr_1291.do" screen="kpi.main.main_1291.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1291_Control</web-action-class>
+   </url-mapping>
+      <!-- NIM관련데이조정 등록: 하진영(2012.8) -->
+   <url-mapping url="main.scr.main_scr_1301.do" screen="kpi.main.main_1301.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1301_Control</web-action-class>
+   </url-mapping>
+   <!-- 외환실적 조정 등록 : 하진영(2012.2) -->
+   <url-mapping url="main.scr.main_scr_1311.do" screen="kpi.main.main_1311.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1311_Control</web-action-class>
+   </url-mapping>
+   <!-- 타지점실적고객 등록 : 하진영(2013.5) -->
+   <url-mapping url="main.scr.main_scr_1331.do" screen="kpi.main.main_1331.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1331_Control</web-action-class>
+   </url-mapping>
+   <!-- SH자금관리실적 등록: 조형석(2015.7) -->
+   <url-mapping url="main.scr.main_scr_1341.do" screen="kpi.main.main_1341.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1341_Control</web-action-class>
+   </url-mapping>
+   <!-- 여수신지표 기타조정금액 등록 : 조형석(2016.3) -->
+   <url-mapping url="main.scr.main_scr_1351.do" screen="kpi.main.main_1351.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1351_Control</web-action-class>
+   </url-mapping>
+   <!-- 수산해양업종대출관리 : 하진영(2018.1) -->
+   <url-mapping url="main.scr.main_scr_1361.do" screen="kpi.main.main_1361.screen" >
+     <web-action-class>kpi.main.scr.main_scr_1361_Control</web-action-class>
+   </url-mapping>
+ <!-- 설문조사 201109 nextro 이후 미사용-->
+   <url-mapping url="main.scr.main_scr_2011.do" screen="kpi.main.main_2011.screen" >
+     <web-action-class>kpi.main.scr.main_scr_2011_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="main.scr.main_scr_2021.do" screen="kpi.main.main_2021.screen" >
+     <web-action-class>kpi.main.scr.main_scr_2021_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="main.scr.main_scr_2031.do" screen="kpi.main.main_2031.screen" >
+     <web-action-class>kpi.main.scr.main_scr_2031_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="main.scr.main_scr_2041.do" screen="kpi.main.main_2041.screen" >
+     <web-action-class>kpi.main.scr.main_scr_2041_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="main.scr.main_scr_2051.do" screen="kpi.main.main_2051.screen" >
+     <web-action-class>kpi.main.scr.main_scr_2051_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="main.scr.main_scr_2061.do" screen="kpi.main.main_2061.screen" >
+     <web-action-class>kpi.main.scr.main_scr_2061_Control</web-action-class>
+   </url-mapping>
+
+ <!-- 목표배점 -->
+   <!-- 영업점별 목표등록 -->
+   <url-mapping url="main.scr.main_scr_3011.do" screen="kpi.main.main_3011.screen" >
+     <web-action-class>kpi.main.scr.main_scr_3011_Control</web-action-class>
+   </url-mapping>
+   <!-- 영업점별 목표조회 -->
+   <url-mapping url="main.scr.main_scr_3021.do" screen="kpi.main.main_3021.screen" >
+     <web-action-class>kpi.main.scr.main_scr_3021_Control</web-action-class>
+   </url-mapping>
+   <!-- 영업점별 배점등록 -->
+   <url-mapping url="main.scr.main_scr_3031.do" screen="kpi.main.main_3031.screen" >
+     <web-action-class>kpi.main.scr.main_scr_3031_Control</web-action-class>
+   </url-mapping>
+   <!-- 영업점별 배점조회 -->
+   <url-mapping url="main.scr.main_scr_3041.do" screen="kpi.main.main_3041.screen" >
+     <web-action-class>kpi.main.scr.main_scr_3041_Control</web-action-class>
+   </url-mapping>
+   <!-- 목표 등록 이력 조회-->
+   <url-mapping url="main.scr.main_scr_3051.do" screen="kpi.main.main_3051.screen" >
+     <web-action-class>kpi.main.scr.main_scr_3051_Control</web-action-class>
+   </url-mapping>
+   <!-- 최저이익목표 조정손익 등록 -->
+   <url-mapping url="main.scr.main_scr_3111.do" screen="kpi.main.main_3111.screen" >
+     <web-action-class>kpi.main.scr.main_scr_3111_Control</web-action-class>
+   </url-mapping>
+   <!-- 최저이익목표 조정손익 조회 -->
+   <url-mapping url="main.scr.main_scr_3121.do" screen="kpi.main.main_3121.screen" >
+     <web-action-class>kpi.main.scr.main_scr_3121_Control</web-action-class>
+   </url-mapping>
+   <!-- GRID평점표등록 -->
+   <url-mapping url="main.scr.main_scr_3131.do" screen="kpi.main.main_3131.screen" >
+     <web-action-class>kpi.main.scr.main_scr_3131_Control</web-action-class>
+   </url-mapping>
+   <!-- 직전년도 순증목표실적 등록 -->
+   <url-mapping url="main.scr.main_scr_3141.do" screen="kpi.main.main_3141.screen" >
+     <web-action-class>kpi.main.scr.main_scr_3141_Control</web-action-class>
+   </url-mapping>
+   <!-- 직전년도 순증목표실적 조회 -->
+   <url-mapping url="main.scr.main_scr_3151.do" screen="kpi.main.main_3151.screen" >
+     <web-action-class>kpi.main.scr.main_scr_3151_Control</web-action-class>
+   </url-mapping>
+   <!-- 개인별PI권유직원변경 -->
+   <url-mapping url="main.scr.main_scr_4011.do" screen="kpi.main.main_4011.screen" >
+     <web-action-class>kpi.main.scr.main_scr_4011_Control</web-action-class>
+   </url-mapping>
+   <!-- 본부주관마케팅 관리 -->
+   <url-mapping url="main.scr.main_scr_4021.do" screen="kpi.main.main_4021.screen" >
+     <web-action-class>kpi.main.scr.main_scr_4021_Control</web-action-class>
+   </url-mapping>
+   <!-- 개인별PI직원정보관리 -->
+   <url-mapping url="main.scr.main_scr_4031.do" screen="kpi.main.main_4031.screen" >
+     <web-action-class>kpi.main.scr.main_scr_4031_Control</web-action-class>
+   </url-mapping>
+   <!-- 특수계좌이익관리 -->
+   <url-mapping url="main.scr.main_scr_4041.do" screen="kpi.main.main_4041.screen" >
+     <web-action-class>kpi.main.scr.main_scr_4041_Control</web-action-class>
+   </url-mapping>
+   <!-- SPC수탁업무수수료 관리 : 조형석(2008.4) -->
+   <url-mapping url="main.scr.main_scr_6011.do" screen="kpi.main.main_6011.screen" >
+     <web-action-class>kpi.main.scr.main_scr_6011_Control</web-action-class>
+   </url-mapping>
+
+   <!-- 후선보임 인력관리 : 조형석(2013.11) -->
+   <url-mapping url="main.scr.main_scr_5011.do" screen="kpi.main.main_5011.screen" >
+     <web-action-class>kpi.main.scr.main_scr_5011_Control</web-action-class>
+   </url-mapping>
+   <!-- 후선보임 권유제외계좌 등록 : 조형석(2013.11) -->
+   <url-mapping url="main.scr.main_scr_5021.do" screen="kpi.main.main_5021.screen" >
+     <web-action-class>kpi.main.scr.main_scr_5021_Control</web-action-class>
+   </url-mapping>
+   <!-- 후선보임 기타수익 등록 : 조형석(2013.11) -->
+   <url-mapping url="main.scr.main_scr_5031.do" screen="kpi.main.main_5031.screen" >
+     <web-action-class>kpi.main.scr.main_scr_5031_Control</web-action-class>
+   </url-mapping>
+
+   <!-- 부지점장관리 2014년 7월 부터: 조형석 (2014.07)  -->
+   <!-- 부지점장 관리 : 조형석(2014.07) -->
+   <url-mapping url="main.scr.main_scr_4511.do" screen="kpi.main.main_4511.screen" >
+     <web-action-class>kpi.main.scr.main_scr_4511_Control</web-action-class>
+   </url-mapping>
+   <!-- 부지점장 목표 : 조형석(2014.07) -->
+   <url-mapping url="main.scr.main_scr_4521.do" screen="kpi.main.main_4521.screen" >
+     <web-action-class>kpi.main.scr.main_scr_4521_Control</web-action-class>
+   </url-mapping>
+   <!-- 부지점장 배점 : 조형석(2014.07) -->
+   <url-mapping url="main.scr.main_scr_4531.do" screen="kpi.main.main_4531.screen" >
+     <web-action-class>kpi.main.scr.main_scr_4531_Control</web-action-class>
+   </url-mapping>
+   <!-- 부지점장 기타조정손익 : 조형석(2014.07) -->
+   <url-mapping url="main.scr.main_scr_4541.do" screen="kpi.main.main_4541.screen" >
+     <web-action-class>kpi.main.scr.main_scr_4541_Control</web-action-class>
+   </url-mapping>
+   <!-- 부지점장 기준실적 : 조형석(2015.03) -->
+   <url-mapping url="main.scr.main_scr_4561.do" screen="kpi.main.main_4561.screen" >
+     <web-action-class>kpi.main.scr.main_scr_4561_Control</web-action-class>
+   </url-mapping>
+   <!-- 부지점장 고객관리 : 조형석(2015.03) -->
+   <url-mapping url="main.scr.main_scr_4571.do" screen="kpi.main.main_4571.screen" >
+     <web-action-class>kpi.main.scr.main_scr_4571_Control</web-action-class>
+   </url-mapping>
+   <!-- 부지점장 실적조정계좌 : 조형석(2015.03) -->
+   <url-mapping url="main.scr.main_scr_4581.do" screen="kpi.main.main_4581.screen" >
+     <web-action-class>kpi.main.scr.main_scr_4581_Control</web-action-class>
+   </url-mapping>
+   <!-- 부지점장 지정업무 : 양인찬(2016.03) -->
+   <url-mapping url="main.scr.main_scr_4591.do" screen="kpi.main.main_4591.screen" >
+     <web-action-class>kpi.main.scr.main_scr_4591_Control</web-action-class>
+   </url-mapping>
+
+   <!-- 영업점 팀장 관리 -->
+   <!-- 영업점 팀장 관리 : 양인찬 (2019.11)  -->
+   <url-mapping url="main.scr.main_scr_5511.do" screen="kpi.main.main_5511.screen" >
+     <web-action-class>kpi.main.scr.main_scr_5511_Control</web-action-class>
+   </url-mapping>
+
+ <!-- 영업점 보고서 -->
+ <!-- 성과집계표 -->
+   <!-- 종합점수표 -->
+   <url-mapping url="rpop.scr.rpop_scr_1010.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_1010_Control</web-action-class>
+   </url-mapping>
+   <!-- 성과집계표 -->
+   <url-mapping url="rpop.scr.rpop_scr_1020.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_1020_Control</web-action-class>
+   </url-mapping>
+   <!-- PeerGroup별 성과집계표 -->
+   <url-mapping url="rpop.scr.rpop_scr_1030.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_1030_Control</web-action-class>
+   </url-mapping>
+   <!-- Moon Chart -->
+   <url-mapping url="rpop.scr.rpop_scr_1040.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_1040_Control</web-action-class>
+   </url-mapping>
+   <!-- 이익추이표 -->
+   <url-mapping url="rpop.scr.rpop_scr_1050.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_1050_Control</web-action-class>
+   </url-mapping>
+   <!-- 마진율추이표 -->
+   <url-mapping url="rpop.scr.rpop_scr_1060.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_1060_Control</web-action-class>
+   </url-mapping>
+   <!-- 이익상세명세표 -->
+   <url-mapping url="rpop.scr.rpop_scr_1070.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_1070_Control</web-action-class>
+   </url-mapping>
+   <!-- 경쟁영업점별 비교 -->
+   <url-mapping url="rpop.scr.rpop_scr_1080.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_1080_Control</web-action-class>
+   </url-mapping>
+   <!-- 기간대비 비교 -->
+   <url-mapping url="rpop.scr.rpop_scr_1090.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_1090_Control</web-action-class>
+   </url-mapping>
+   <!-- 순이자수익 2012년 미운용 -->
+   <url-mapping url="rpop.scr.rpop_scr_2010.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_2010_Control</web-action-class>
+   </url-mapping>
+   <!-- 가중평균마진율 2008년이후 미운용 -->
+   <url-mapping url="rpop.scr.rpop_scr_2020.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_2020_Control</web-action-class>
+   </url-mapping>
+   <!-- 연체율 -->
+   <url-mapping url="rpop.scr.rpop_scr_2030.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_2030_Control</web-action-class>
+   </url-mapping>
+   <!-- 종합비이자 -->
+   <url-mapping url="rpop.scr.rpop_scr_2080.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_2080_Control</web-action-class>
+   </url-mapping>
+   <!-- 여신포트폴리오 -->
+   <url-mapping url="rpop.scr.rpop_scr_2100.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_2100_Control</web-action-class>
+   </url-mapping>
+   <!-- NIM순이자마진율 -->
+   <url-mapping url="rpop.scr.rpop_scr_2120.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_2120_Control</web-action-class>
+   </url-mapping>
+   <!-- 신규발생고정이하여신비율: 하진영(2012.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_2130.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_2130_Control</web-action-class>
+   </url-mapping>
+   <!-- 종합(비)이자이익개선도: 하진영(2012.10)-->
+   <url-mapping url="rpop.scr.rpop_scr_2140.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_2140_Control</web-action-class>
+   </url-mapping>
+   <!-- 위험조정운용마진율: 하진영(2013.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_2150.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_2150_Control</web-action-class>
+   </url-mapping>
+   <!-- 고객별 보고서 -->
+   <url-mapping url="rpop.scr.rpop_scr_3010.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_3010_Control</web-action-class>
+   </url-mapping>
+   <!-- 연체고객별 보고서 -->
+   <url-mapping url="rpop.scr.rpop_scr_3030.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_3030_Control</web-action-class>
+   </url-mapping>
+   <!-- 소액대출금 실적보고서 2010이후 미운용 -->
+   <url-mapping url="rpop.scr.rpop_scr_3050.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_3050_Control</web-action-class>
+   </url-mapping>
+   <!-- 신규발생고정이하여신비율 세부내역: 하진영(2012.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_3130.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_3130_Control</web-action-class>
+   </url-mapping>
+   <!-- 계좌별위험조정운용마진율: 하진영(2013.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_3150.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_3150_Control</web-action-class>
+   </url-mapping>
+
+<!--세부내역 보고서 -->
+   <!-- 신규예수금고객 세부내역 : 양인찬(2020.07)-->
+   <url-mapping url="rpop.scr.rpop_scr_3160.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_3160_Control</web-action-class>
+   </url-mapping>
+   <!-- 상품판매 세부내역 : 양인찬(2020.07)-->
+   <url-mapping url="rpop.scr.rpop_scr_3170.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_3170_Control</web-action-class>
+   </url-mapping>
+   <!-- 적립식펀드 세부내역 : 양인찬(2020.08)-->
+   <url-mapping url="rpop.scr.rpop_scr_3180.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_3180_Control</web-action-class>
+   </url-mapping>
+   <!-- 카드유효회원 세부내역 : 양인찬(2020.08)-->
+   <url-mapping url="rpop.scr.rpop_scr_3190.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_3190_Control</web-action-class>
+   </url-mapping>   
+   <!-- 신규대출금고객 세부내역 : 양인찬(2021.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_3200.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_3200_Control</web-action-class>
+   </url-mapping>
+   <!-- 디지털신규비이자고객 세부내역 : 양인찬(2021.08)-->
+   <url-mapping url="rpop.scr.rpop_scr_3210.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_3210_Control</web-action-class>
+   </url-mapping>
+   <!-- 신규우량고객 세부내역 : 양인찬(2021.08)-->
+   <url-mapping url="rpop.scr.rpop_scr_3220.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_3220_Control</web-action-class>
+   </url-mapping>
+   <!-- 고객수증대 세부내역 : 양인찬(2022.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_3230.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_3230_Control</web-action-class>
+   </url-mapping>
+
+<!--영업점 총괄 -->
+   <!--영업점 총괄실적 -->
+   <url-mapping url="rpop.scr.rpop_scr_4010.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_4010_Control</web-action-class>
+   </url-mapping>
+   <!--영업점 KPI 총괄실적 -->
+   <url-mapping url="rpop.scr.rpop_scr_4020.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_4020_Control</web-action-class>
+   </url-mapping>
+   <!--영업점 NON KPI 총괄실적 -->
+   <url-mapping url="rpop.scr.rpop_scr_4030.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_4030_Control</web-action-class>
+   </url-mapping>
+   <!--기업금융센터 KPI 총괄실적 -->
+   <url-mapping url="rpop.scr.rpop_scr_4040.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_4040_Control</web-action-class>
+   </url-mapping>
+   <!--기업금융센터 NON KPI 총괄실적 -->
+   <url-mapping url="rpop.scr.rpop_scr_4050.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_4050_Control</web-action-class>
+   </url-mapping>
+
+<!-- 개인PI-->
+   <!-- 개인별PI 실적 -->
+   <url-mapping url="rpop.scr.rpop_scr_5010.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5010_Control</web-action-class>
+   </url-mapping>
+   <!-- 개인별PI세부내역 -->
+   <url-mapping url="rpop.scr.rpop_scr_5020.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5020_Control</web-action-class>
+   </url-mapping>
+   <!-- 종합이익증대평가세부내역: 하진영(2014.04) -->
+   <url-mapping url="rpop.scr.rpop_scr_5030.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5030_Control</web-action-class>
+   </url-mapping>
+   <!-- 총예수금 평가내역 조회 : 조형석(2008.04) -->
+   <url-mapping url="rpop.scr.rpop_scr_5040.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5040_Control</web-action-class>
+   </url-mapping>
+   <!-- 종합이익 증대평가 조회 : 조형석(2009.09) -->
+   <url-mapping url="rpop.scr.rpop_scr_5060.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5060_Control</web-action-class>
+   </url-mapping>
+   <!-- 우수직원 실적평가 조회 : 박아란(2014.04) -->
+   <url-mapping url="rpop.scr.rpop_scr_5070.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5070_Control</web-action-class>
+   </url-mapping>
+   <!-- 후선보임 세부실적 : 조형석 (2013.11) -->
+   <url-mapping url="rpop.scr.rpop_scr_5080.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5080_Control</web-action-class>
+   </url-mapping>
+   <!-- 총여신운용 평가내역 조회 : 하진영(2010.03) -->
+   <url-mapping url="rpop.scr.rpop_scr_5090.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5090_Control</web-action-class>
+   </url-mapping>
+   <!-- RM 대출금내역: 하진영(2012.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_5110.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5110_Control</web-action-class>
+   </url-mapping>
+   <!-- RM 예수금내역: 하진영(2012.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_5120.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5120_Control</web-action-class>
+   </url-mapping>
+   <!-- 소매여신 평가내역: 조형석(2014.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_5130.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5130_Control</web-action-class>
+   </url-mapping>
+   <!-- RM 저비용성예수금 내역 : 양인찬(2019.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_5140.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5140_Control</web-action-class>
+   </url-mapping>
+   <!--순수개인예금 내역 : 조형석 (2016.01)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5150.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5150_Control</web-action-class>
+   </url-mapping>
+
+   <!--기업대출금 평가내역 : 하진영 (2018.01)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5210.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5210_Control</web-action-class>
+   </url-mapping>
+   <!--수산해양대출금 평가내역 : 하진영 (2018.01)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5220.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5220_Control</web-action-class>
+   </url-mapping>
+   <!--대출금 평가내역 : 양인찬 (2020.03)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5230.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5230_Control</web-action-class>
+   </url-mapping>
+   <!--신규대출금 평가내역 : 양인찬 (2021.08)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5240.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5240_Control</web-action-class>
+   </url-mapping>   
+   <!--경영현안 실적 : 양인찬 (2021.10)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5250.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5250_Control</web-action-class>
+   </url-mapping>
+   <!--대출금 최종실적 : 양인찬 (2021.10)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5260.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5260_Control</web-action-class>
+   </url-mapping>
+   <!--RM(본부) 경영현안 실적 : 양인찬 (2021.10)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5270.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5270_Control</web-action-class>
+   </url-mapping>
+   <!--RM(본부) 대출금 최종 실적 : 양인찬 (2021.10)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5280.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5280_Control</web-action-class>
+   </url-mapping>
+
+   <!--RM(센터) 소매예수금 내역 : 양인찬 (2018.03)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5310.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5310_Control</web-action-class>
+   </url-mapping>
+   <!--RM(센터) 기업예수금 내역 : 양인찬 (2018.03)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5320.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5320_Control</web-action-class>
+   </url-mapping>
+   <!--RM(센터) 소매대출금 내역 : 양인찬 (2018.03)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5330.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5330_Control</web-action-class>
+   </url-mapping>
+   <!--RM(센터) 기업대출금 내역 : 양인찬 (2018.03)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5340.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5340_Control</web-action-class>
+   </url-mapping>
+
+   <!--소매예수금 내역 :하진영 (2017.08)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5160.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5160_Control</web-action-class>
+   </url-mapping>
+
+   <!--기업예수금 내역 :하진영 (2018.03)  -->
+   <url-mapping url="rpop.scr.rpop_scr_5170.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5170_Control</web-action-class>
+   </url-mapping>
+
+   <!-- 개인저비용성예수금 평가내역 조회 : 양인찬(2019.03) -->
+   <url-mapping url="rpop.scr.rpop_scr_5180.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5180_Control</web-action-class>
+   </url-mapping>
+
+   <!-- 기업저비용성예수금 평가내역 조회 : 양인찬(2019.03) -->
+   <url-mapping url="rpop.scr.rpop_scr_5050.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5050_Control</web-action-class>
+   </url-mapping>
+
+   <!-- 금융본부 저비용성예수금 평가내역 조회 : 양인찬(2019.08) -->
+   <url-mapping url="rpop.scr.rpop_scr_5190.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5190_Control</web-action-class>
+   </url-mapping>
+
+   <!-- 금융본부 개인예수금 평가내역 조회 : 양인찬(2020.07) -->
+   <url-mapping url="rpop.scr.rpop_scr_5200.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5200_Control</web-action-class>
+   </url-mapping>
+   
+   <!-- 개인핵심예수금 실적 : 양인찬(2022.03) -->
+   <url-mapping url="rpop.scr.rpop_scr_5410.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5410_Control</web-action-class>
+   </url-mapping>
+   <!-- 기업핵심예수금 실적 : 양인찬(2022.03) -->
+   <url-mapping url="rpop.scr.rpop_scr_5420.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5420_Control</web-action-class>
+   </url-mapping>
+   <!-- 핵심예수금합산 실적 : 양인찬(2022.03) -->
+   <url-mapping url="rpop.scr.rpop_scr_5430.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5430_Control</web-action-class>
+   </url-mapping>
+   <!-- RM(본부) 개인핵심예수금 실적 : 양인찬(2022.03) -->
+   <url-mapping url="rpop.scr.rpop_scr_5440.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5440_Control</web-action-class>
+   </url-mapping>
+   <!-- RM(본부) 기업핵심예수금 실적 : 양인찬(2022.03) -->
+   <url-mapping url="rpop.scr.rpop_scr_5450.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5450_Control</web-action-class>
+   </url-mapping>
+   <!-- RM(본부) 핵심예수금합산 실적 : 양인찬(2022.03) -->
+   <url-mapping url="rpop.scr.rpop_scr_5460.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5460_Control</web-action-class>
+   </url-mapping>
+   <!-- 고객수익률 실적 : 양인찬(2022.03) -->
+   <url-mapping url="rpop.scr.rpop_scr_5470.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_5470_Control</web-action-class>
+   </url-mapping>      
+
+   <!-- 수시입출식예수금내역: 하진영(2013.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_6010.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_6010_Control</web-action-class>
+   </url-mapping>
+   <!-- 디마케팅 대상 여신 -->
+   <url-mapping url="rpop.scr.rpop_scr_6020.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_6020_Control</web-action-class>
+   </url-mapping>
+   <!-- 디마케팅 대상 여신 세부내역-->
+   <url-mapping url="rpop.scr.rpop_scr_6030.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_6030_Control</web-action-class>
+   </url-mapping>
+   <!-- 자율목표제 관련 조회-->
+   <url-mapping url="rpop.scr.rpop_scr_6040.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_6040_Control</web-action-class>
+   </url-mapping>
+
+ <!-- RM 총괄 2012년부터 영업점보고서에서 조회-->
+   <!-- RM 총괄실적: 하진영(2012.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_7010.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7010_Control</web-action-class>
+   </url-mapping>
+   <!-- RM 총괄세부실적: 하진영(2012.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_7020.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7020_Control</web-action-class>
+   </url-mapping>
+   <!-- RM 권유계좌확인: 하진영(2012.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_7030.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7030_Control</web-action-class>
+   </url-mapping>
+
+ <!-- 예수금 별도평가 -->
+   <!-- 별도평가 총괄실적(영업점): 양인찬(2019.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_9010.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_9010_Control</web-action-class>
+   </url-mapping>
+   <!-- 별도평가 세부실적(영업점): 양인찬(2019.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_9020.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_9020_Control</web-action-class>
+   </url-mapping>
+   <!-- 별도평가 총괄실적(RM센터): 양인찬(2019.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_9030.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_9030_Control</web-action-class>
+   </url-mapping>
+   <!-- 별도평가 세부실적(RM센터): 양인찬(2019.03)-->
+   <url-mapping url="rpop.scr.rpop_scr_9040.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_9040_Control</web-action-class>
+   </url-mapping>
+
+<!-- 부지점장총괄 2014년 7월 부터: 조형석 (2014.07)  -->
+   <!-- 부지점장권유계좌확인: 조형석(2014.07)-->
+   <url-mapping url="rpop.scr.rpop_scr_7210.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7210_Control</web-action-class>
+   </url-mapping>
+   <!-- 부지점장총괄실적: 조형석(2014.07)-->
+   <url-mapping url="rpop.scr.rpop_scr_7220.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7220_Control</web-action-class>
+   </url-mapping>
+   <!-- 부지점장총괄세부실적: 조형석(2014.07)-->
+   <url-mapping url="rpop.scr.rpop_scr_7230.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7230_Control</web-action-class>
+   </url-mapping>
+  <!-- 부지점장대출금실적 : 조형석 (2015.03)  -->
+   <url-mapping url="rpop.scr.rpop_scr_7240.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7240_Control</web-action-class>
+   </url-mapping>
+  <!-- 부지점장예수금실적 : 조형석 (2015.03)  -->
+   <url-mapping url="rpop.scr.rpop_scr_7250.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7250_Control</web-action-class>
+   </url-mapping>
+  <!-- 부지점장 연체율 : 양인찬 (2021.08)  -->
+   <url-mapping url="rpop.scr.rpop_scr_7260.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7260_Control</web-action-class>
+   </url-mapping>
+  <!-- 부지점장 연체고객별 보고서 : 양인찬 (2021.08)  -->
+   <url-mapping url="rpop.scr.rpop_scr_7270.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7270_Control</web-action-class>
+   </url-mapping>
+  <!-- RM(영업점) 저비용성예수금실적 : 양인찬 (2022.03)  -->
+   <url-mapping url="rpop.scr.rpop_scr_7280.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7280_Control</web-action-class>
+   </url-mapping>
+  <!-- RM(영업점) 개인핵심예수금실적 : 양인찬 (2021.08)  -->
+   <url-mapping url="rpop.scr.rpop_scr_7290.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7290_Control</web-action-class>
+   </url-mapping>
+  <!-- RM(영업점) 기업핵심예수금실적: 양인찬 (2021.08)  -->
+   <url-mapping url="rpop.scr.rpop_scr_7300.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7300_Control</web-action-class>
+   </url-mapping>
+  <!-- RM(영업점) 핵심예수금합산실적: 양인찬 (2021.08)  -->
+   <url-mapping url="rpop.scr.rpop_scr_7310.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_7310_Control</web-action-class>
+   </url-mapping>
+
+ <!-- 우수직원 실적조회 -->
+   <!-- 교차판매 우수 : 양인찬 (2019.05)  -->
+   <url-mapping url="rpop.scr.rpop_scr_8010.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_8010_Control</web-action-class>
+   </url-mapping>
+   <!-- 신규예수금 우수 : 양인찬 (2019.05)  -->
+   <url-mapping url="rpop.scr.rpop_scr_8020.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_8020_Control</web-action-class>
+   </url-mapping>
+   <!-- 여신마케팅 우수 : 양인찬 (2019.05)  -->
+   <url-mapping url="rpop.scr.rpop_scr_8030.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_8030_Control</web-action-class>
+   </url-mapping>   
+   <!-- 성과증대 프로모션 영업점 : 양인찬 (2021.03)  -->
+   <url-mapping url="rpop.scr.rpop_scr_8040.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_8040_Control</web-action-class>
+   </url-mapping>
+   <!-- 성과증대 프로모션 개인 : 양인찬 (2021.03)  -->
+   <url-mapping url="rpop.scr.rpop_scr_8050.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_8050_Control</web-action-class>
+   </url-mapping>
+
+ <!-- 팀별 관리지표 -->
+   <!-- 개인금융 KPI  : 양인찬 (2019.11)   -->
+   <url-mapping url="rpop.scr.rpop_scr_4060.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_4060_Control</web-action-class>
+   </url-mapping>
+   <!-- 기업금융 KPI  : 양인찬 (2019.11)   -->
+   <url-mapping url="rpop.scr.rpop_scr_4070.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_4070_Control</web-action-class>
+   </url-mapping>
+   <!-- 개인업무형 부지점장 KPI : 양인찬 (2020.03)   -->
+   <url-mapping url="rpop.scr.rpop_scr_4080.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_4080_Control</web-action-class>
+   </url-mapping>
+   <!-- 기업업무형 부지점장 KPI : 양인찬 (2020.03)   -->
+   <url-mapping url="rpop.scr.rpop_scr_4090.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_4090_Control</web-action-class>
+   </url-mapping>
+   <!-- 기업업무형 부지점장 (기업B) KPI : 양인찬 (2021.03)   -->
+   <url-mapping url="rpop.scr.rpop_scr_4100.do" screen="kpi.rpop.rpop_rpt.screen" >
+     <web-action-class>kpi.rpop.scr.rpop_scr_4100_Control</web-action-class>
+   </url-mapping>
+
+  <!-- 일일보고서 : 조형석(2009.06.30) -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1010.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1010_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_1020.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1020_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_1030.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1030_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_1040.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1040_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_1050.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1050_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_1060.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1060_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_1070.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1070_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_1080.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1080_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_1090.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1090_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_1100.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1100_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_1110.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1110_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_1120.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1120_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_1130.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1130_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_1140.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1140_Control</web-action-class>
+   </url-mapping>
+   <!-- 신규고정이하비율: 조형석(2012.03)-->
+   <url-mapping url="rpdy.scr.rpdy_scr_1150.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1150_Control</web-action-class>
+   </url-mapping>
+   <!-- 신규고정이하비율 세부내역: 조형석(2012.03)-->
+   <url-mapping url="rpdy.scr.rpdy_scr_1160.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1160_Control</web-action-class>
+   </url-mapping>
+   <!-- 일일성과집계표: 조형석(2012.03)-->
+   <url-mapping url="rpdy.scr.rpdy_scr_1170.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1170_Control</web-action-class>
+   </url-mapping>
+   <!-- 일일성과집계표 세부내역: 조형석(2012.03)-->
+   <url-mapping url="rpdy.scr.rpdy_scr_1180.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1180_Control</web-action-class>
+   </url-mapping>
+
+   <!-- 일일성과RM관련-->
+   <!-- 권유계좌리스트: 조형석(2012.03)-->
+   <url-mapping url="rpdy.scr.rpdy_scr_1190.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1190_Control</web-action-class>
+   </url-mapping>
+   <!-- 예수금실적: 조형석(2012.03)-->
+   <url-mapping url="rpdy.scr.rpdy_scr_1200.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1200_Control</web-action-class>
+   </url-mapping>
+   <!-- 대출금실적: 조형석(2012.03)-->
+   <url-mapping url="rpdy.scr.rpdy_scr_1210.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1210_Control</web-action-class>
+   </url-mapping>
+
+   <!-- 일일성과 고도화 : 조형석(2013.03)-->
+   <url-mapping url="rpdy.scr.rpdy_scr_2010.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2010_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_2020.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2020_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_2030.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2030_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_2040.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2040_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_2050.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2050_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_2060.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2060_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_2070.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2070_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_2080.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2080_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_2090.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2090_Control</web-action-class>
+   </url-mapping>
+   <url-mapping url="rpdy.scr.rpdy_scr_2100.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2100_Control</web-action-class>
+   </url-mapping>
+   <!--일일RM외환사업실적 : 하진영 (2014.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2110.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2110_Control</web-action-class>
+   </url-mapping>
+   <!--일일후선보임 권유리스트 : 조형석 (2013.11)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2200.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2200_Control</web-action-class>
+   </url-mapping>
+   <!--일일RM중저원가성예금 : 조형석 (2014.08)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2120.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2120_Control</web-action-class>
+   </url-mapping>
+   <!--일일RM카드사업실적 : 장보윤 (2015.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2140.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2140_Control</web-action-class>
+   </url-mapping>
+   <!--일일 RM 소매예수금 실적 : 양인찬 (2018.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2180.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2180_Control</web-action-class>
+   </url-mapping>
+   <!--일일 RM 기업예수금 실적 : 양인찬 (2018.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2190.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2190_Control</web-action-class>
+   </url-mapping>
+   <!--일일 RM 소매대출금 실적 : 양인찬 (2018.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2210.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2210_Control</web-action-class>
+   </url-mapping>
+   <!--일일 RM 기업대출금 실적 : 양인찬 (2018.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2220.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2220_Control</web-action-class>
+   </url-mapping>
+   <!--일일 RM 신탁사업 실적 : 양인찬 (2018.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2230.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2230_Control</web-action-class>
+   </url-mapping>
+   <!--일일 RM 신규 기업예수금 고객: 양인찬 (2018.09)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2240.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2240_Control</web-action-class>
+   </url-mapping>
+   <!--일일성과 순수개인예금 실적 : 조형석 (2016.01) -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1220.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1220_Control</web-action-class>
+   </url-mapping>
+   <!--일일성과 적립식예금 실적 : 조형석 (2017.02) -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1230.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1230_Control</web-action-class>
+   </url-mapping>
+   <!--일일성과 예대율 실적 : 조형석 (2017.03) -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1240.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1240_Control</web-action-class>
+   </url-mapping>
+   <!--일일RM 연체율 실적 : 조형석 (2017.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2150.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2150_Control</web-action-class>
+   </url-mapping>
+   <!--일일RM 예대율 실적 : 조형석 (2017.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2160.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2160_Control</web-action-class>
+   </url-mapping>
+   <!--일일개인예수금 실적 : 유용욱 (2017.08)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2130.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2130_Control</web-action-class>
+   </url-mapping>
+   <!--일일기업예수금 실적 : 유용욱 (2018.01)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2170.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2170_Control</web-action-class>
+   </url-mapping>
+   <!--일일기업대출금 실적 : 유용욱 (2018.01)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1310.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1310_Control</web-action-class>
+   </url-mapping>
+   <!--일일 수산해양금대출금 실적 : 유용욱 (2018.01)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1320.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1320_Control</web-action-class>
+   </url-mapping>
+   <!--일일 신규기업예수금고객 실적 : 유용욱 (2019.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1330.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1330_Control</web-action-class>
+   </url-mapping>
+   <!--일일 연계증권 실적 : 유용욱 (2019.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1340.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1340_Control</web-action-class>
+   </url-mapping>
+   <!--일일 개인저비용성예수금 실적 : 유용욱 (2019.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1350.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1350_Control</web-action-class>
+   </url-mapping>
+   <!--일일 신규기업대출금고객 실적 : 유용욱 (2019.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1360.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1360_Control</web-action-class>
+   </url-mapping>
+   <!--일일 RM신규기업대출금고객 실적 : 유용욱 (2019.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2250.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2250_Control</web-action-class>
+   </url-mapping>
+   <!--일일 성과집계표 세부내역 별도평가용 : 유용욱 (2019.04)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2260.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2260_Control</web-action-class>
+   </url-mapping>
+   <!--일일 기업저비용성예수금 실적 : 유용욱 (2019.08)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1370.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1370_Control</web-action-class>
+   </url-mapping>
+   <!--일일 신규예수금고객 실적 : 유용욱 (2019.08)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1380.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1380_Control</web-action-class>
+   </url-mapping>
+   <!--일일 상품판매 : 이해인 (2020.02)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1390.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1390_Control</web-action-class>
+   </url-mapping>
+   <!--일일 신규대출금고객 실적 : 이우석 (2021.02)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1400.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1400_Control</web-action-class>
+   </url-mapping>
+   <!--일일 신규대출금실적 세부내역 : 이우석 (2021.02)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1401.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1401_Control</web-action-class>
+   </url-mapping>
+
+   <!--일일 개인금융KPI : 이해인 (2020.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2270.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2270_Control</web-action-class>
+   </url-mapping>
+   <!--일일 기업금융KPI : 이해인 (2020.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2280.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2280_Control</web-action-class>
+   </url-mapping>
+   <!--일일 개인업무형KPI : 이해인 (2020.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2290.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2290_Control</web-action-class>
+   </url-mapping>
+   <!--일일 기업업무형KPI : 이해인 (2020.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2300.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2300_Control</web-action-class>
+   </url-mapping>
+
+   <!--일일 신규예수금고객 실적 세부내역 : 유용욱 (2020.07)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1381.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1381_Control</web-action-class>
+   </url-mapping>
+   <!--일일 상품판매 세부내역 : 유용욱 (2020.07)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1391.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1391_Control</web-action-class>
+   </url-mapping>
+   <!--일일 신용카드유효회원 실적 세부내역 : 유용욱 (2020.08)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1081.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1081_Control</web-action-class>
+   </url-mapping>
+   <!--일일 적립식펀드 실적 세부내역 : 유용욱 (2020.08)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1041.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1041_Control</web-action-class>
+   </url-mapping>
+
+	 <!--rm 개인예수금 : 이상용 (2020.09)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2310.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2310_Control</web-action-class>
+   </url-mapping>
+	 <!--rm 주거래기업 : 이상용 (2021.02)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2320.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2320_Control</web-action-class>
+   </url-mapping>   
+   <!--금융본부 성과집계표 세부내역 : 이상용 (2021.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2330.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2330_Control</web-action-class>
+   </url-mapping>   
+   <!--기업부지점장 B : 이상용 (2021.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2360.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2360_Control</web-action-class>
+   </url-mapping>   
+   <!--2021년 상반기 프로모션 영업점 : 이상용 (2021.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2340.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2340_Control</web-action-class>
+   </url-mapping>   
+   <!--2021년 상반기 프로모션 개인 : 이상용 (2021.03)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2350.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2350_Control</web-action-class>
+   </url-mapping>   
+   <!--2021년 상반기 신규우량고객 : 이상용 (2021.08)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1410.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1410_Control</web-action-class>
+   </url-mapping>  
+   <!--2021년 하반기 신규우량고객 세부내역: 이상용 (2021.08)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1411.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1411_Control</web-action-class>
+   </url-mapping>  
+   <!--2022년 하반기 저비용성증대 : 이해인 (2022.08)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1450.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1450_Control</web-action-class>
+   </url-mapping>     
+   <!--2021년 하반기  디지털판매 신규비이자고객 세부내역 : 이상용 (2021.08)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1101.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1101_Control</web-action-class>
+   </url-mapping>      
+   <!--2021년 하반기  신규대츨금 : 이상용 (2021.08)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1250.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1250_Control</web-action-class>
+   </url-mapping>   
+   <!--2021년 10월  경영현안 실적 : 이상용 (2021.10)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1260.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1260_Control</web-action-class>
+   </url-mapping>   
+   <!--2021년 10월  대출금 최종실적 : 이상용 (2021.10)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1270.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1270_Control</web-action-class>
+   </url-mapping>   
+   <!--2021년 10월  rm 경영현안 실적 : 이상용 (2021.10)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2390.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2390_Control</web-action-class>
+   </url-mapping>   
+   <!--2021년 10월  rm 대출금 최종실적 : 이상용 (2021.10)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2400.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2400_Control</web-action-class>
+   </url-mapping>       
+   <!--2022년 1월 개인핵심적 : 이상용 (2022.01)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1420.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1420_Control</web-action-class>
+   </url-mapping>                      
+   <!--2022년 1월 기업핵심 : 이상용 (2022.01)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1430.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1430_Control</web-action-class>
+   </url-mapping>   
+   <!--2022년 1월 핵심최종실적 : 이상용 (2022.01)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_1440.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_1440_Control</web-action-class>
+   </url-mapping>    
+   <!--2022년 2월 rm개인핵심적 : 이상용 (2022.02)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2410.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2410_Control</web-action-class>
+   </url-mapping>                      
+   <!--2022년 2월 rm기업핵심 : 이상용 (2022.02)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2420.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2420_Control</web-action-class>
+   </url-mapping>   
+   <!--2022년 2월 rm핵심최종실적 : 이상용 (2022.02)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2430.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2430_Control</web-action-class>
+   </url-mapping>          
+   <!--2022년 9월 기업금융지점장 저비용성증대 : 이해인 (2022.09)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2440.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2440_Control</web-action-class>
+   </url-mapping>             
+   <!--KPI 성과유공 RM점 : 이상용 (2021.04)  -->
+   <url-mapping url="rpdy.scr.rpdy_scr_2370.do" screen="kpi.rpdy.rpdy_rpt.screen" >
+     <web-action-class>kpi.rpdy.scr.rpdy_scr_2370_Control</web-action-class>
+   </url-mapping>   
+</mappings>

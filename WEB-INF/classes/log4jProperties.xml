@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<!-- author whatthe@sicc.co.kr -->
+<!-- don't use another charector set please !! -->
+<!-- don't rewrite ConversionPattern value when you try, can't use LF5 -->
+
+<log4j:configuration>
+
+<!--LF5Appender -->
+	<!-- appender name="LF5Appender" class="org.apache.log4j.lf5.LF5Appender">
+   	<param name="MaxNumberOfRecords" value="1000"/>
+  	</appender -->
+
+<!--console mode -->
+  	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+	  	<layout class="org.apache.log4j.PatternLayout">
+     	<param name="ConversionPattern"  value="%d %-5p [%t] %C{2} (%F:%L) - %m\n"/>
+	  	</layout>
+  	</appender>
+
+<!--file mode -->
+	<!-- appender name="FILE" class="org.apache.log4j.RollingFileAppender">
+   	<param name="File"   value="c:/log/kpi/log4jLog.txt" />
+    	<param name="Append" value="true" />
+        <param name="MaxFileSize" value="10000KB" />
+        <param name="MaxBackupIndex" value="10" />
+    	<layout class="org.apache.log4j.PatternLayout">
+	 		<param name="ConversionPattern" value="[slf5s.start]%d{yyyy MMM dd HH:mm:ss}[slf5s.DATE]%p[slf5s.PRIORITY]%x[slf5s.NDC]%t[slf5s.THREAD]%c[slf5s.CATEGORY]%l[slf5s.LOCATION]%m[slf5s.MESSAGE]%n%n"/>
+    	</layout>
+	</appender -->
+
+
+<!--file mode for a class-->
+	<!-- appender name="CLASSFILE" class="org.apache.log4j.RollingFileAppender">
+   	<param name="File"   value="c:/log/kpi/log4jLog_Aclass.txt" />
+    	<param name="Append" value="true" />
+    	<layout class="org.apache.log4j.PatternLayout">
+	 		<param name="ConversionPattern" value="[slf5s.start]%d{yyyy MMM dd HH:mm:ss}[slf5s.DATE]%p[slf5s.PRIORITY]%x[slf5s.NDC]%t[slf5s.THREAD]%c[slf5s.CATEGORY]%l[slf5s.LOCATION]%m[slf5s.MESSAGE]%n%n"/>
+    	</layout>
+	</appender -->
+
+<!--socket mode for a class-->
+ <!-- appender name="SOCKET" class="org.apache.log4j.net.SocketAppender">
+    <param name="File"   value="c:/log/kpi/log4jLog_socket.txt" />
+    <param name="RemoteHost"   value="localhost" />
+    <param name="Port"   value="8088" />
+     <param name="Append" value="true" />
+     <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="[slf5s.start]%d{yyyy MMM dd HH:mm:ss}[slf5s.DATE]%p[slf5s.PRIORITY]%x[slf5s.NDC]%t[slf5s.THREAD]%c[slf5s.CATEGORY]%l[slf5s.LOCATION]%m[slf5s.MESSAGE]%n%n"/>
+     </layout>
+ </appender -->
+
+<!--file DAILY back up-->
+<!--
+	<appender name="DAILYFILE" class="org.apache.log4j.RollingFileAppender">
+   	<param name="File"   value="c:/log4jLog_Aclass.txt" />
+    	<param name="Append" value="true" />
+    	<layout class="org.apache.log4j.PatternLayout">
+	 		<param name="ConversionPattern" value="[slf5s.start]%d{yyyy MMM dd HH:mm:ss}[slf5s.DATE]%p[slf5s.PRIORITY]%x[slf5s.NDC]%t[slf5s.THREAD]%c[slf5s.CATEGORY]%l[slf5s.LOCATION]%m[slf5s.MESSAGE]%n%n"/>
+    	</layout>
+	</appender>
+-->
+
+
+
+<!-- ***************************************** -->
+<!-- * SCAPE : 										  -->
+<!-- ***************************************** -->
+
+
+<!-- controlling scope a class or package -->
+	<logger name="InitUsingXMLPropertiesFile">
+  		<appender-ref ref="CLASSFILE"/>
+	</logger>
+<!-- controlling scape  -->
+	<root>
+     	<priority value ="debug" />
+        <appender-ref ref="LF5Appender"/>
+        <appender-ref ref="CLASSFILE"/>
+	 	<appender-ref ref="STDOUT"/>
+	 	<appender-ref ref="FILE"/>
+  	</root>
+
+</log4j:configuration>

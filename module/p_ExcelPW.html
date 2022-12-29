@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+<head>
+<title>엑셀다운비밀번호입력</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<!-- 공통 css선언 -->
+<link rel="stylesheet" href="css/css.css" type="text/css">
+
+<!-- 화면 function 선언 -->
+<script language="javascript">
+    // 비빌번호 문자숫자 여부 체크
+    function ContainsChars(obj,chars) {
+        for (var inx = 0; inx < obj.length; inx++) {
+           if (chars.indexOf(obj.charAt(inx)) != -1)
+               return true;
+        }
+        return false;
+    }
+
+    // 비밀번호 유효체크 onBlur
+    function fnValidChk(obj) {
+    	if (obj == "") return;
+    
+    	if (obj.length < 9){
+    		alert('비밀번호 자릿수는 9 이상이어야 합니다.');
+    		return false;
+    	}
+    
+      var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~!@#$%^&*()+|\=-`;:/<>{}[]?.";
+      if (!ContainsChars(obj,chars)) {
+    	  alert('비밀번호는 영문,숫자,특수문자가 조합되어야 합니다.');
+    		return false;
+    	}
+
+      var chars = "0123456789"
+      if (!ContainsChars(obj,chars)) {
+    	  alert('비밀번호는 영문,숫자,특수문자가 조합되어야 합니다.');
+    		return false;
+    	}
+
+      var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+      if (!ContainsChars(obj,chars)) {
+    	  alert('비밀번호는 영문,숫자,특수문자가 조합되어야 합니다.');
+    		return false;
+    	}
+
+      var chars = "~!@#$%^&*()+|\=-`;:/<>{}[]?."
+      if (!ContainsChars(obj,chars)) {
+    	  alert('비밀번호는 영문,숫자,특수문자가 조합되어야 합니다.');
+    		return false;
+    	}
+        
+    	return true;
+    }
+    
+    function on_PWinput()
+    {
+        if(!fnValidChk(document.frm.i_excelPW.value)){
+             document.frm.i_excelPW.value="";
+             return;
+        }
+        window.returnValue = document.frm.i_excelPW.value;
+        window.close();
+    }  
+
+    function doEnterClick() {
+        if(window.event.srcElement.type != "button") {
+              var ieKey = window.event.keyCode;
+              if (ieKey == 13 ) {
+                on_PWinput();
+              }
+        }
+    }
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onKeyDown="doEnterClick()">
+<form name='frm'>
+	<input type="text" style="display:none"/>
+<table width="248" height="140" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td background="/kpi/img/excelPW_bg.gif" style="background-repeat: no-repeat;"> 
+      <table width="230" height="130" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td height="24">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td height="18"> 
+            <div align="center"> 
+            <input type="password" class="input_l" name="i_excelPW" size="20" value="">
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="18" align="center"> 
+            <img src="/kpi/img/butt_choice.gif" width="64" height="19" border="0" style="cursor:hand" onclick="on_PWinput()">
+            <img src="/kpi/img/butt_close.gif"  width="64" height="19" border="0" style="cursor:hand" onclick="javascript:window.close();">
+          </td>
+        </tr>
+        <tr> 
+          <td height="5">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+</form>
+</body>
+</html>
+

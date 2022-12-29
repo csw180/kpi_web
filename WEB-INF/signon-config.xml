@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<signon-config>
+
+ <!-- Form Sign On Page-->
+ <signon-form-login-page>
+  error.screen
+ </signon-form-login-page>
+
+ <!-- Error Page When Sign On fails-->
+ <signon-form-error-page>
+   error.screen
+ </signon-form-error-page>
+
+ <signon-form-main-page>
+    MainPage.do
+ </signon-form-main-page>
+
+
+ <!-- A Protected Resource-->
+ <main-page-redirect-constraint target-url="MainPage.do">
+    <url-resource url-name="login.jsp"/>
+    <url-resource url-name="signoff.do"/>
+    <url-resource url-name="SignOn.screen"/>
+ </main-page-redirect-constraint>
+
+
+
+ <!-- A Protected Resource-->
+ <security-constraint>
+   <web-resource-collection>
+    <web-resource-name>Account information</web-resource-name>
+    <url-pattern>test.do</url-pattern>
+   </web-resource-collection>
+ </security-constraint>
+
+
+
+</signon-config>

@@ -1,0 +1,266 @@
+                 'FrontEnd Plus' The GUI for the fast JAva Decompiler.
+                                 Version 2.00 BETA 
+              [Starting to Work on this project again after a long break]
+
+PLEASE NOTE: This software now asks you to register, I DO NOT want anything from you..
+             But I would like to know just how many of you out there are using this 
+             product I'm working on. It's is for my own records only and do not ever
+             plan to make this software sharware. It sort of gives me encouragement
+             to continue building this project, and thats all.
+
+PLEASE NOTE: This software is now beginning to take shape of some sort BUT WILL still
+             have a few bugs hidden in there no doubt, this is why it's a Beta :)
+             But I will continue to improve it over a course of time and will also
+             add useful suggestions as time goes on. 
+
+PLEASE NOTE: This version now supports JDK, Although only simple compile operations
+             are available at this present time. Also note error checking is NOT yet Implemented
+	     in this feature, so your on your own for the time being.
+
+FINAL NOTE:  Remember this program MUST be in the same directory as JAD.EXE
+
+This is the README file for FrontEnd - the Front End GUI for JAD the fast Java Decompiler.
+Jad home page: http://www.geocities.com/SiliconValley/Bridge/8617/jad.html
+JAD is Copyright 1997-99 Pavel Kouznetsov (kpdus@geocities.com).
+Front End is Copyright 1999-2000 Martin Cowley (Wizards.Dungeon@BTinternet.com).
+FrontEnd Homepage: http://www.reflectonus.pwp.blueyonder.co.uk/
+
+1). Disclaimer of Warranty
+
+This software and the accompanying files are supplied "AS IS" and without warranties
+whether expressed or implied.  Supplier does not guarantee anything, you install and
+use this program entirely at your own risk
+
+The user must assume the entire risk of using the program.  Any liability of the
+supplier will be limited exclusively to product replacement, (FrontEnd.exe).
+
+2). Third Party
+
+TWD Software is a Thrid Party and only writes the Front End GUI of the JAD Java Decompiler.
+ So please if you have any comments or questions reguarding 'FrontEnd' do not send them
+to Pavel, all mail requarding 'FrontEnd' should be addressed to : 
+
+                               FrontEnd@reflections.ath.cx
+
+All mail requarding JAD itself should be addressed to :
+
+				   kpdus@geocities.com
+
+3). UPDATES
+
+You will always be able to get new releases from the JAD homepage, but I've also made space
+available on my own photographic site now. that is :
+
+http://www.reflectonus.pwp.blueyonder.co.uk/
+
+also, it can be found on :
+
+http://www.geocities.com/SiliconValley/Bridge/8617/jad.html
+
+
+Installation
+++++++++++++
+             'FrontEnd' should be placed into the same directory as you installed JAD.EXE.
+so, if you have installed (JAD the fast JAva Decompiler) into say; C:\JAD then you will need
+to place FrontEnd.exe also into C:\JAD.
+
+             This is basically the install procedure complete. You can also add a Desktop
+Icon if you so wish.
+
+
+Updated Email Address
++++++++++++++++++++++
+
+
+What's New in 2.00
+++++++++++++++++++
+
+NEW - Total Rewrite.......: The entire project as been rewritten
+
+NEW - Compiler now works!.: Yes I've tested it on several systems and it's looking good :)
+
+NEW - RTF Output..........: Decompiled source can now be output to RTF
+
+NEW - JAR Create..........: You can now create JAR Files from within FrontEnd
+
+NEW = JAR Extract.........: You can now extract class files from within JAR Files
+
+NEW - Find/Search/Replace.: Now works properly
+
+NEW - Save All Added......: Lots of people wanted this feature
+
+Update - Printing.........: Printing works a whole lot better
+
+Updates...................: Lots :)
+
+
+What's New in 1.03
+++++++++++++++++++
+
+Update - Compiler Working.: The compiler is now working 50% of the time :)
+
+Update - Buttons..........: Made the layout look better
+
+
+What's New in 1.02
+++++++++++++++++++
+
+Fixed Batch Compile.......: Some had problems with this, now it's been totally rebuilt
+
+Fixed HTML Output.........: Some people reported problems here, now fixed.
+
+Fixed Runtime Error.......: Some people reported a runtime error now fixed
+
+New Methods/Imports.......: Added the long awaited Imports and Methods Tree
+
+
+What's New in 1.01
+++++++++++++++++++
+
+Not a Public Release
+
+
+What's New in 1.00
+++++++++++++++++++
+
+Code Changes.............: Changed some code, improved speed etc.
+
+Colour Printing..........: Now prints in colour.
+
+
+
+
+What's New in 0.09
+++++++++++++++++++
+
+This Release never got to a public stage...
+
+
+
+What's New in 0.08
+++++++++++++++++++
+                  
+Minor Changes...........: Various Bugs found and destroyed. [New ones added :)]
+
+Line Numbers............: You now have the option of Line Numbers
+
+New Buttons.............: The old ones looked odd !
+
+Basically this release is the pre-final one before I release a final version, yes it will
+still be freeware as I said before I dont ever plan on making this project cost you
+money. 
+
+
+
+What's New in 0.07
+++++++++++++++++++
+                   Support for JDK and Command Line
+
+Added JDK Support.......: Simple Compile function added. (Very primative)
+
+Multi Compile...........: More than one file can be compiled at a time
+
+File Association........: FrontEnd can be activated from file association
+
+
+
+What's New in 0.06
+++++++++++++++++++
+                   Fixed and new features...
+
+The Start of a final release...
+
+Fixed Recent Files......: Fixed a small bug in Recent files
+
+Cleaned up code.........: Removed some unwanted code
+
+Batch Process...........: Added Batch DeCompiling
+
+Command Options.........: Added some important Command Line Options
+
+
+
+What's New in 0.05
+++++++++++++++++++
+                   New Feature and improved GUI
+
+Improved MDI Windows....: Started to make it look more professional.
+
+Improved Main Form......: Added Glyphs in the pulldown menus
+
+Find Text...............: Finally sorted out a small problem with this!
+
+Search & Replace........: At last it's been included in a Beta Release!
+
+
+
+What's New in 0.04
+++++++++++++++++++
+                   Some features improved and some added
+
+Syntax Highlighting....: This was not generating correctly at times, all appears correct now!
+
+HTML Output............: This now ouputs HTML files with Syntax Highlighting
+
+Homepage Linking.......: You can visit the homepages of both the GUI and JAD now :)
+
+
+
+What's New in 0.03
+++++++++++++++++++
+                  Some of the new features added this time ...
+
+Syntax Highlighting....: This was a must, but just need to figure out a few things ;)
+
+Recent Files...........: Can now reload recent files that have been used.
+
+Once again found a few bits of untidy code, cleaned up most of this now so we are now
+starting to get an optimized program at last...
+
+
+
+What's New in 0.02
+++++++++++++++++++
+                  Some needed features have been added to FrontEnd this time around;
+
+HTML Output............: You can now save your decompiled work as a HTML file.
+
+Font Select............: I added this support due to the fact of several requests.
+
+Edit...................: A Couple of minor updates to the Edit feature have been made.
+
+Copy...................: Well this could be useful.
+
+Cut....................: Need this if Copy is there!
+
+Paste..................: And this :)
+
+Select All.............: Why not ...
+
+Print..................: You can now print the Decompiled Java file.
+
+Internal code has been cleaned up, making decompiling faster than before.  
+
+
+
+What's New in 0.01
+++++++++++++++++++
+
+Converted FrontEnd
+
+
+To do in future releases
+++++++++++++++++++++++++
++ Start to write an help file :(   <I hate that bit> of course offers are welcome :)
++ I'm now putting my time towards getting the compiler section completed.. Soon Very Soon :)
+
+These features are to be given serious consideration.
++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Open to suggestions
+
+
+Your Suggestions.
++++++++++++++++++
+
+Any Suggestions you may have please send them in now, I will give all sensible
+idea's serious consideration.

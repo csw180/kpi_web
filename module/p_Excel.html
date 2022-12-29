@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>엑셀파일선택</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<!-- 공통 css선언 -->
+<link rel="stylesheet" href="/kpi/css/css.css" type="text/css">
+
+<!-- 화면 function 선언 -->
+<script language="javascript">
+    function on_SelectType()
+    {
+        var g_RetVal = '';
+        for(i=0;i<document.frm.exceltype.length;i++){
+          if(document.frm.exceltype[i].checked==true){
+              g_RetVal = document.frm.exceltype[i].value;
+              break;
+          }
+        }        
+        window.returnValue = g_RetVal;
+        window.close();
+    }  
+
+    function doEnterClick() {
+        if(window.event.srcElement.type != "button") {
+              var ieKey = window.event.keyCode;
+              if (ieKey == 13 ) {
+                //doSearch(1);
+                on_SelectType()
+              }
+        }
+    }
+</script>
+<link href="/kpi/css/css.css" rel="stylesheet" type="text/css">
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onKeyDown="doEnterClick()">
+<form name='frm'>
+
+
+<table width="248" height="168" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td background="/kpi/img/excel_bg.gif">
+      <table width="230" height="155" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td height="30">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td height="45"> 
+            <div align="center"> 
+            <input type="radio" name="exceltype" value="1" checked> 스피드&nbsp;&nbsp;
+            <input type="radio" name="exceltype" value="2"> 일반 </div>
+          </td>
+        </tr>
+        <tr> 
+          <td height="35">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td height="27" align="center"> 
+            <img src="/kpi/img/butt_choice.gif" width="64" height="19" border="0" style="cursor:hand" onclick="on_SelectType()">
+            <img src="/kpi/img/butt_close.gif"  width="64" height="19" border="0" style="cursor:hand" onclick="javascript:window.close();">
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+
+<!-- <table width="290" height="177" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td background="/kpi/img/excel_bg.gif">
+      <table width="265" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="20"><div align="center">
+              <table width="80%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center">
+                    <input type="radio" name="exceltype" value="1" checked> 스피드&nbsp;&nbsp;
+                    <input type="radio" name="exceltype" value="2"> 일반 
+                  </td>
+                </tr>
+              </table>
+            </div></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td height="20" align="center">일반 선택시는 셀병합으로 전환 속도가 늦습니다.</td>
+        </tr>
+        <tr> 
+          <td height="15"></td>
+        </tr>
+        <tr> 
+          <td height="43" align="center"> 
+            <img src="/kpi/img/butt_choice.gif" width="64" height="19" border="0" style="cursor:hand" onclick="on_SelectType()">
+            <img src="/kpi/img/butt_close.gif"  width="64" height="19" border="0" style="cursor:hand" onclick="javascript:window.close();">
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table> -->
+</form>
+</body>
+</html>
+

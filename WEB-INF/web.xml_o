@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+   <!--
+  <listener>
+    <listener-class>com.clipsoft.clipreport.server.service.listener.ReportSessionListener</listener-class>
+  </listener>
+  
+   <listener>
+    <listener-class>com.clipsoft.clipreport.server.service.listener.ReportInstallListener</listener-class>
+  </listener>
+  
+  <context-param>
+		<param-name>reportProperty</param-name>
+		<param-value>{%RealPath%}/WEB-INF/clipreport4/clipreport4.properties</param-value>
+ </context-param>
+ 	-->
+   <!-- 압축 TIFF 파일이 있을 경우에만 사용되는 리스너 (java1.6 이상)-->
+   <!--
+   <listener>
+        <listener-class>com.twelvemonkeys.servlet.image.IIOProviderContextListener</listener-class>
+    </listener>
+  -->
+  <!-- 단 DRM 연동작업에선 사용이 불가능 합니다. propertyPath의 값이 없을 경우에는 기본 설정값으로 설정됩니다.-->
+  <!--
+  <servlet>
+    <servlet-name>Clip</servlet-name>
+    <servlet-class>com.clipsoft.Clip</servlet-class>
+     <init-param>
+         <param-name>propertyPath</param-name>
+         <param-value></param-value>
+     </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Clip</servlet-name>
+    <url-pattern>/Clip</url-pattern>
+  </servlet-mapping>
+    -->
+</web-app>
